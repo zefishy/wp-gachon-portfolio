@@ -285,3 +285,25 @@ a { color: inherit; }
 .site-footer a { text-underline-offset: .2em; }
 .site-footer :focus-visible { outline-color: var(--footer-ink); }
 .fine { font-size: .9375rem; opacity: .85; }
+
+/* ---------- Narrow phones ----------
+   The header packs tighter, the hero stacks under a smaller photo, the
+   buttons stretch full-width, and the cards drop to one column. */
+@media (max-width: 36rem) {
+  .owner small { display: none; }
+  .site-nav a { padding-inline: .35rem; font-size: .9375rem; white-space: nowrap; }
+  .hero { padding-block: 2rem 1.5rem; }
+  .avatar { width: 7.5rem; height: 7.5rem; }
+  .btn { flex: 1 1 100%; }
+  .cards { grid-template-columns: 1fr; }
+}
+
+/* ---------- Reduced motion ----------
+   No smooth scrolling, no icon swing, no card hover shifts — the theme
+   switch still works, it just changes colours instantly. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  :root { transition: none; }
+  .theme-toggle svg { transition: none; }
+  .card article { transition: none; }
+}
