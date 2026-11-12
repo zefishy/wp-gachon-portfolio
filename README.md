@@ -48,6 +48,30 @@ real photo, drop it in `img/` and point the hero image at it in
 <img class="avatar" src="img/me.jpg" alt="Portrait of Ryan Wong" width="160" height="160">
 ```
 
+## Deploy — GitHub Pages (Homework 2)
+
+1. Push this repo to GitHub with the branch name `main`.
+2. On the repo page: **Settings → Pages → Build and deployment →
+   Source: "Deploy from a branch"**, branch `main`, folder `/ (root)` → **Save**.
+3. Wait about a minute — the site goes live at
+   `https://<username>.github.io/portfolio/` (the URL to submit on Cybercampus).
+
+## Accessibility — the Homework 2 checklist
+
+The page already meets every item; the Lighthouse score must be captured
+from the **live** URL after deploying (DevTools → Lighthouse →
+category *Accessibility* → Mobile → Analyze):
+
+- [x] Semantic HTML — `header`, `nav`, `main`, `footer`, labelled `section`s
+- [x] Responsive CSS — mobile-first, with narrow-phone rules at ≤ 36 rem
+- [x] JS interaction — light/dark toggle with saved preference
+- [x] Meaningful alt text on every image
+- [x] WCAG AA contrast — computed for every text/background pair in both
+      themes; worst pair is 6.8:1 (AA requires 4.5:1)
+- [x] Valid HTML — passes the W3C Nu validator with zero errors
+- [ ] **Lighthouse Accessibility ≥ 90** — run it on the live URL and save the
+      screenshot for Cybercampus
+
 ## Viewing
 
 Open `index.html` in any browser — no build step, no dependencies. Once
