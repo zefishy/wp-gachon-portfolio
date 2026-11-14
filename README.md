@@ -3,7 +3,7 @@
 A single-page personal portfolio for **Ryan Wong**, exchange student at
 Gachon University (K0126002 Web Programming · 2026 Fall · Dr. Toshpulatov).
 
-Built as the Week 9 homework: a personal portfolio repo with a semantic
+Built as the Week 10 homework: a personal portfolio repo with a semantic
 HTML page, responsive CSS themed to match my
 [course library](https://github.com/zefishy/web-prog-gachon), and a
 light/dark theme toggle that remembers your choice.
